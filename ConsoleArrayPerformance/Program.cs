@@ -19,7 +19,7 @@
             // With this, the next loop runs faster
             Array.Sort(data);
 
-            // Test
+            // Test 
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             long sum = 0;
