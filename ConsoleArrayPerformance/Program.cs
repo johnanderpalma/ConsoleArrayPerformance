@@ -3,10 +3,18 @@
     using System;
     using System.Diagnostics;
 
+    /// <summary>
+    /// Console application to test performance when using arrays
+    /// </summary>
     public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Main method of the console application
+        /// </summary>
+        /// <param name="args">String array</param>
+        public static void Main(string[] args)
         {
+            // Generate data
             int arraySize = 32768;
             int[] data = new int[arraySize];
             Random random = new Random(0);
@@ -30,7 +38,9 @@
                 for (int c = 0; c < arraySize; c++)
                 {
                     if (data[c] >= 128)
+                    {
                         sum += data[c];
+                    }
                 }
             }
 
